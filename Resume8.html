@@ -19,6 +19,7 @@
 
     <main class="Main">
         <div id="MenuBlock">
+            <!--When styled in css media query & screen width decrease, menu needs to run horizontally across screen-->
             <nav>
                 <h3 id="Menu">Menu</h3>
                 <ul class="navList">
@@ -55,83 +56,96 @@
 
             <h2 id="experience">Experience</h2>
 
-            <h3>Job 1</h3>
+            <!--Placing Job in a Div in order to style it when placing in a media query-->
+            <div class="Job">
+                <h3>Job 1</h3>
 
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia, voluptates
-                    consectetur
-                    laboriosam ab rem iusto ratione nihil culpa consequuntur dolorem. Ea optio voluptates
-                    voluptatem
-                    perferendis
-                    fugiat magnam asperiores consectetur!</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsam eius sed,
-                    explicabo
-                    distinctio
-                    unde possimus animi quos nobis placeat atque eaque facere est commodi! Architecto minima
-                    commodi
-                    consequuntur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus fuga repellendus
-                    reprehenderit
-                    soluta
-                    doloribus atque explicabo corporis blanditiis laudantium quam optio cumque perspiciatis
-                    quia
-                    ipsa,
-                    inventore
-                    eum obcaecati odio dolor.</li>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt repellat aut earum
-                    corporis
-                    tempora
-                    iure placeat ipsam sint quidem vitae error ut, laborum labore harum ad minima odio
-                    ducimus.
-                </li>
-            </ul>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia, voluptates
+                        consectetur
+                        laboriosam ab rem iusto ratione nihil culpa consequuntur dolorem. Ea optio voluptates
+                        voluptatem
+                        perferendis
+                        fugiat magnam asperiores consectetur!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui ipsam eius sed,
+                        explicabo
+                        distinctio
+                        unde possimus animi quos nobis placeat atque eaque facere est commodi! Architecto minima
+                        commodi
+                        consequuntur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus fuga repellendus
+                        reprehenderit
+                        soluta
+                        doloribus atque explicabo corporis blanditiis laudantium quam optio cumque perspiciatis
+                        quia
+                        ipsa,
+                        inventore
+                        eum obcaecati odio dolor.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor sunt repellat aut earum
+                        corporis
+                        tempora
+                        iure placeat ipsam sint quidem vitae error ut, laborum labore harum ad minima odio
+                        ducimus.
+                    </li>
+                </ul>
+            </div>
 
-            <h3>Job 2</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ducimus possimus neque
-                    ipsa
-                    quibusdam
-                    consequatur officia est, ex voluptatibus atque voluptates molestias, iste reiciendis
-                    voluptatem
-                    facilis
-                    labore ut illo non?</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus excepturi minus
-                    sapiente,
-                    inventore
-                    pariatur repellendus similique quisquam repellat illum, ab possimus necessitatibus iste
-                    quos.
-                    Nulla,
-                    necessitatibus! Similique, cum enim!</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, adipisci odit.
-                    Quaerat
-                    natus
-                    debitis harum tempora iusto. Alias, quidem temporibus voluptatum, adipisci modi
-                    molestias
-                    suscipit
-                    aliquid
-                    laborum deleniti, enim nostrum!</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sequi voluptas quia
-                    impedit!
-                    Consectetur,
-                    aut
-                    optio. Voluptatem sint dolore recusandae quis inventore quaerat nostrum maiores
-                    accusantium
-                    reprehenderit
-                    tenetur, sunt ipsum!</li>
-            </ul>
+            <div class="Job">
+                <h3>Job 2</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ducimus possimus neque
+                        ipsa
+                        quibusdam
+                        consequatur officia est, ex voluptatibus atque voluptates molestias, iste reiciendis
+                        voluptatem
+                        facilis
+                        labore ut illo non?</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus excepturi minus
+                        sapiente,
+                        inventore
+                        pariatur repellendus similique quisquam repellat illum, ab possimus necessitatibus iste
+                        quos.
+                        Nulla,
+                        necessitatibus! Similique, cum enim!</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, adipisci odit.
+                        Quaerat
+                        natus
+                        debitis harum tempora iusto. Alias, quidem temporibus voluptatum, adipisci modi
+                        molestias
+                        suscipit
+                        aliquid
+                        laborum deleniti, enim nostrum!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sequi voluptas quia
+                        impedit!
+                        Consectetur,
+                        aut
+                        optio. Voluptatem sint dolore recusandae quis inventore quaerat nostrum maiores
+                        accusantium
+                        reprehenderit
+                        tenetur, sunt ipsum!</li>
+                </ul>
+            </div>
 
+            <!--Placing ul for skill in a Div in order to style in css media query-->
             <h1 id="skills">Skills</h1>
 
             <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <li>Skill 4</li>
+                <div class="Skill-List">
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                </div>
+                <div class="Skill-List">
+                    <li>Skill 3</li>
+                    <li>Skill 4</li>
+                </div>
             </ul>
+
+<!--Changed the headshot-shoulders max-width from 1400px to 768px to switch images in sync with meadia queries- breakpoint 768px-->
+<!--Changed small image width from 500px to 300px to fit nicely when media querie breakpoint is scaled down to 550px-->
             <picture>
                 <source media="(max-width:650px)" srcset="Images/headshot.jpg">
-                <source media="(max-width:1400px)" srcset="Images/headshot-shoulders.jpg">
-                <img src="images/original-shot.jpg" alt="profile2" width="500px">
+                <source media="(max-width:768px)" srcset="Images/headshot-shoulders.jpg">
+                <img src="images/original-shot.jpg" alt="profile2" width="300px">
             </picture>
         </div>
     </main>

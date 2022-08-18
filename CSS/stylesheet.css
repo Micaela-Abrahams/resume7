@@ -6,7 +6,7 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 /*Code for the Header*/
@@ -14,43 +14,68 @@ header {
   text-align: center;
   background-color: #457B9D;
   color: aliceblue;
-  }
+}
 
 /*Footer Section*/
 footer {
   background-color: #457B9D;
   text-align: center;
-  }
+}
 
-  /*Code for Menu Bar*/
+/*Code for Menu Bar*/
 #MenuBlock {
   width: 30%;
   background-color: lightslategray;
   color: aliceblue;
   margin-right: 1%;
   padding: 1rem;
-  ;}
+  ;
+}
 
 #ProfilePhoto {
   border-radius: 50%;
-  border: 3px solid rgb(104, 99, 99);}
+  border: 3px solid rgb(104, 99, 99);
+}
 
 #ContactDetails {
   color: aliceblue;
 }
 
-.navList{
+.navList {
   list-style-type: none;
   padding: 0%
 }
 
-.Main{
+.Main {
   display: flex;
   flex-direction: row;
   overflow: unset;
 }
 
-/*Code ofr for the media queries section*/
-@media screen {
-  
+
+/*Media query for Job ID */
+/*When screen is 768px or less Job 1 & Job 2 will appear inline next to each other on the screen*/
+@media screen and (max-width:768px) {
+  .Job {
+    display: inline-block;
+    width: 45%;
+  }
+/*Styling of the Skills list when the screen is 768px or less the ul will be displayed inline next to each other*/
+  .Skill-List {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+/*When screen is 550px or less Job 1 & Job 2 will appear underneath each other on the screen*/
+@media screen and (max-width:550px) {
+  .Job {
+    display: flex;
+    flex-direction: column;
+  }
+/*Styling of the Skills list when the screen is 550px or less the ul will be displayed underneath each other*/
+  .Skill-List {
+    display: flex;
+    flex-direction: column;
+  }
 }
